@@ -113,9 +113,7 @@ export default function Item({ service, groupName, useEqualHeights }) {
                   <Status service={service} style={statusStyle} />
                   <span className="sr-only">View container stats</span>
                 </button>
-                {showContainerActions && (
-                  <ContainerActions containerName={service.container} server={service.server} />
-                )}
+                {showContainerActions && <ContainerActions containerName={service.container} server={service.server} />}
               </>
             )}
             {service.app && !service.external && (
