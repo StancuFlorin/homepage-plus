@@ -64,7 +64,6 @@ export default function ContainerActions({ containerName, server, service }) {
           setSelectedAction(value);
           handleContainerAction(value);
         }}
-        actionsText="Actions"
       />
     </div>
   );
