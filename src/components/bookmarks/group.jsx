@@ -25,7 +25,11 @@ export default function BookmarksGroup({
       key={bookmarks.name}
       className={classNames(
         "bookmark-group flex-1 overflow-hidden",
-        layout?.style === "row" ? "basis-full" : maxGroupColumns ? `basis-full md:basis-1/4 lg:basis-1/5 xl:basis-1/6 3xl:basis-1/${maxGroupColumns}` : "basis-full md:basis-1/4 lg:basis-1/5 xl:basis-1/6",
+        layout?.style === "row"
+          ? "basis-full"
+          : maxGroupColumns
+            ? `basis-full md:basis-1/4 lg:basis-1/5 xl:basis-1/6 3xl:basis-1/${maxGroupColumns}`
+            : "basis-full md:basis-1/4 lg:basis-1/5 xl:basis-1/6",
         layout?.header === false ? "px-1" : "p-1 pb-0",
       )}
     >
