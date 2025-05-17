@@ -264,13 +264,13 @@ fullWidth: true
 
 ### Maximum Group Columns
 
-You can set the maximum number of columns of groups on larger screen sizes (note this is only for groups with the default `style: columns`, not groups with `stle: row`) by adding:
+You can set the number of columns for groups on larger screen sizes (note this is only for groups with the default `style: columns`, not groups with `style: row`) by adding:
 
 ```yaml
-maxGroupColumns: 8 # default is 4 for services, 6 for bookmarks, max 8
+maxGroupColumns: 3 # any number from 1 upwards
 ```
 
-By default homepage will max out at 4 columns for services and 6 for bookmarks, thus the minimum for this setting is _5_. Of course, if you're setting this to higher numbers, you may want to consider enabling the [fullWidth](#full-width) option as well.
+By default homepage will use 4 columns for services and 6 for bookmarks if maxGroupColumns is not set. You can set this to any number to override the defaults. When setting higher numbers (like 7 or 8), you may want to consider enabling the fullWidth option as well.
 
 If you want to set the maximum columns for bookmark groups separately, you can do so by adding:
 
