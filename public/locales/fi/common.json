@@ -63,7 +63,7 @@
         "wlan_users": "WLAN Users",
         "up": "UP",
         "down": "DOWN",
-        "wait": "Odota, ole hyvä",
+        "wait": "Please wait",
         "empty_data": "Subsystem status unknown"
     },
     "docker": {
@@ -111,7 +111,7 @@
         "offline": "Offline",
         "offline_alt": "Offline",
         "online": "Online",
-        "total": "Yhteensä",
+        "total": "Total",
         "unknown": "Unknown"
     },
     "evcc": {
@@ -133,7 +133,7 @@
         "unread": "Unread"
     },
     "fritzbox": {
-        "connectionStatus": "Tila",
+        "connectionStatus": "Status",
         "connectionStatusUnconfigured": "Unconfigured",
         "connectionStatusConnecting": "Connecting",
         "connectionStatusAuthenticating": "Authenticating",
@@ -168,10 +168,10 @@
         "passes": "Passes"
     },
     "tautulli": {
-        "playing": "Toistaa",
-        "transcoding": "Transkoodaa",
-        "bitrate": "Bittinopeus",
-        "no_active": "Ei aktiivisia striimejä",
+        "playing": "Playing",
+        "transcoding": "Transcoding",
+        "bitrate": "Bitrate",
+        "no_active": "No Active Streams",
         "plex_connection_error": "Check Plex Connection"
     },
     "omada": {
@@ -193,7 +193,7 @@
         "tv": "TV Shows"
     },
     "sabnzbd": {
-        "rate": "Nopeus",
+        "rate": "Rate",
         "queue": "Jono",
         "timeleft": "Aikaa jäljellä"
     },
@@ -242,25 +242,25 @@
         "wanted": "Haluttu",
         "queued": "Jonossa",
         "series": "Series",
-        "queue": "Jono",
+        "queue": "Queue",
         "unknown": "Unknown"
     },
     "radarr": {
-        "wanted": "Haluttu",
+        "wanted": "Wanted",
         "missing": "Missing",
-        "queued": "Jonossa",
+        "queued": "Queued",
         "movies": "Movies",
-        "queue": "Jono",
+        "queue": "Queue",
         "unknown": "Unknown"
     },
     "lidarr": {
-        "wanted": "Haluttu",
-        "queued": "Jonossa",
+        "wanted": "Wanted",
+        "queued": "Queued",
         "artists": "Artists"
     },
     "readarr": {
-        "wanted": "Haluttu",
-        "queued": "Jonossa",
+        "wanted": "Wanted",
+        "queued": "Queued",
         "books": "Kirjoja"
     },
     "bazarr": {
@@ -273,18 +273,19 @@
         "available": "Saatavilla"
     },
     "jellyseerr": {
-        "pending": "Vireillä",
-        "approved": "Hyväksytty",
-        "available": "Saatavilla"
+        "pending": "Pending",
+        "approved": "Approved",
+        "available": "Available",
+        "issues": "Open Issues"
     },
     "overseerr": {
-        "pending": "Vireillä",
+        "pending": "Pending",
         "processing": "Processing",
-        "approved": "Hyväksytty",
-        "available": "Saatavilla"
+        "approved": "Approved",
+        "available": "Available"
     },
     "netalertx": {
-        "total": "Yhteensä",
+        "total": "Total",
         "connected": "Connected",
         "new_devices": "New Devices",
         "down_alerts": "Down Alerts"
@@ -296,8 +297,8 @@
         "gravity": "Vakavuus"
     },
     "adguard": {
-        "queries": "Kyselyjä",
-        "blocked": "Estetty",
+        "queries": "Queries",
+        "blocked": "Blocked",
         "filtered": "Suodatettu",
         "latency": "Viive"
     },
@@ -309,10 +310,10 @@
     "portainer": {
         "running": "Running",
         "stopped": "Pysäytetty",
-        "total": "Yhteensä"
+        "total": "Total"
     },
     "suwayomi": {
-        "download": "Ladattu",
+        "download": "Downloaded",
         "nondownload": "Non-Downloaded",
         "read": "Read",
         "unread": "Unread",
@@ -336,7 +337,7 @@
         "ago": "{{value}} Ago"
     },
     "technitium": {
-        "totalQueries": "Kyselyjä",
+        "totalQueries": "Queries",
         "totalNoError": "Success",
         "totalServerFailure": "Failures",
         "totalNxDomain": "NX Domains",
@@ -344,12 +345,12 @@
         "totalAuthoritative": "Authoritative",
         "totalRecursive": "Recursive",
         "totalCached": "Cached",
-        "totalBlocked": "Estetty",
+        "totalBlocked": "Blocked",
         "totalDropped": "Dropped",
         "totalClients": "Asiakasohjelmia"
     },
     "tdarr": {
-        "queue": "Jono",
+        "queue": "Queue",
         "processed": "Processed",
         "errored": "Errored",
         "saved": "Saved"
@@ -359,14 +360,20 @@
         "services": "Palveluja",
         "middleware": "Middlewareja"
     },
+    "trilium": {
+        "version": "Version",
+        "notesCount": "Notes",
+        "dbSize": "Database Size",
+        "unknown": "Unknown"
+    },
     "navidrome": {
-        "nothing_streaming": "Ei aktiivisia striimejä",
+        "nothing_streaming": "No Active Streams",
         "please_wait": "Odota, ole hyvä"
     },
     "npm": {
         "enabled": "Käytössä",
         "disabled": "Poissa käytöstä",
-        "total": "Yhteensä"
+        "total": "Total"
     },
     "coinmarketcap": {
         "configure": "Määritä yksi tai useampi kryptovaluutta seurattavaksi",
@@ -377,13 +384,13 @@
     },
     "gotify": {
         "apps": "Sovelluksia",
-        "clients": "Asiakasohjelmia",
+        "clients": "Clients",
         "messages": "Viestejä"
     },
     "prowlarr": {
         "enableIndexers": "Indeksoijia",
         "numberOfGrabs": "Nappauksia",
-        "numberOfQueries": "Kyselyjä",
+        "numberOfQueries": "Queries",
         "numberOfFailGrabs": "Epäonnistuneita nappauksia",
         "numberOfFailQueries": "Epäonnistuneita kyselyjä"
     },
@@ -395,7 +402,7 @@
         "numActiveSessions": "Istuntoja",
         "numConnections": "Yhteyksiä",
         "dataRelayed": "Välitetty",
-        "transferRate": "Nopeus"
+        "transferRate": "Rate"
     },
     "mastodon": {
         "user_count": "Users",
@@ -403,14 +410,14 @@
         "domain_count": "Verkkotunnuksia"
     },
     "medusa": {
-        "wanted": "Haluttu",
-        "queued": "Jonossa",
+        "wanted": "Wanted",
+        "queued": "Queued",
         "series": "Series"
     },
     "minecraft": {
         "players": "Players",
         "version": "Version",
-        "status": "Tila",
+        "status": "Status",
         "up": "Online",
         "down": "Offline"
     },
@@ -431,15 +438,15 @@
     },
     "glances": {
         "cpu": "CPU",
-        "load": "Kuorma",
-        "wait": "Odota, ole hyvä",
+        "load": "Load",
+        "wait": "Please wait",
         "temp": "TEMP",
         "_temp": "Temp",
         "warn": "Warn",
         "uptime": "UP",
-        "total": "Yhteensä",
-        "free": "Vapaana",
-        "used": "Käytetty",
+        "total": "Total",
+        "free": "Free",
+        "used": "Used",
         "days": "d",
         "hours": "h",
         "crit": "Crit",
@@ -524,7 +531,7 @@
         "child_bridges": "Child Bridges",
         "child_bridges_status": "{{ok}}/{{total}}",
         "up": "Up",
-        "pending": "Vireillä",
+        "pending": "Pending",
         "down": "Down"
     },
     "healthchecks": {
@@ -533,7 +540,7 @@
         "grace": "In Grace Period",
         "down": "Down",
         "paused": "Paused",
-        "status": "Tila",
+        "status": "Status",
         "last_ping": "Last Ping",
         "never": "No pings yet"
     },
@@ -543,13 +550,13 @@
         "containers_failed": "Failed"
     },
     "autobrr": {
-        "approvedPushes": "Hyväksytty",
+        "approvedPushes": "Approved",
         "rejectedPushes": "Rejected",
         "filters": "Filters",
-        "indexers": "Indeksoijia"
+        "indexers": "Indexers"
     },
     "tubearchivist": {
-        "downloads": "Jono",
+        "downloads": "Queue",
         "videos": "Videos",
         "channels": "Channels",
         "playlists": "Playlists"
@@ -561,9 +568,9 @@
     },
     "pyload": {
         "speed": "Speed",
-        "active": "Aktiivinen",
-        "queue": "Jono",
-        "total": "Yhteensä"
+        "active": "Active",
+        "queue": "Queue",
+        "total": "Total"
     },
     "gluetun": {
         "public_ip": "Public IP",
@@ -580,7 +587,7 @@
         "signalStrength": "Strength",
         "signalQuality": "Quality",
         "symbolQuality": "Quality",
-        "networkRate": "Bittinopeus",
+        "networkRate": "Bitrate",
         "clientIP": "Client"
     },
     "scrutiny": {
@@ -590,7 +597,7 @@
     },
     "paperlessngx": {
         "inbox": "Inbox",
-        "total": "Yhteensä"
+        "total": "Total"
     },
     "peanut": {
         "battery_charge": "Battery Charge",
@@ -601,7 +608,7 @@
         "low_battery": "Low Battery"
     },
     "nextdns": {
-        "wait": "Odota, ole hyvä",
+        "wait": "Please Wait",
         "no_devices": "No Device Data Received"
     },
     "mikrotik": {
@@ -634,14 +641,14 @@
         "layers": "Layers"
     },
     "octoprint": {
-        "printer_state": "Tila",
+        "printer_state": "Status",
         "temp_tool": "Tool temp",
         "temp_bed": "Bed temp",
         "job_completion": "Completion"
     },
     "cloudflared": {
         "origin_ip": "Origin IP",
-        "status": "Tila"
+        "status": "Status"
     },
     "pfsense": {
         "load": "Load Avg",
@@ -681,17 +688,17 @@
     "komga": {
         "libraries": "Libraries",
         "series": "Series",
-        "books": "Kirjoja"
+        "books": "Books"
     },
     "diskstation": {
         "days": "Days",
         "uptime": "Uptime",
-        "volumeAvailable": "Saatavilla"
+        "volumeAvailable": "Available"
     },
     "mylar": {
         "series": "Series",
         "issues": "Issues",
-        "wanted": "Haluttu"
+        "wanted": "Wanted"
     },
     "photoprism": {
         "albums": "Albums",
@@ -700,7 +707,7 @@
         "people": "People"
     },
     "fileflows": {
-        "queue": "Jono",
+        "queue": "Queue",
         "processing": "Processing",
         "processed": "Processed",
         "time": "Time"
@@ -724,7 +731,7 @@
         "numshares": "Shared Items"
     },
     "kopia": {
-        "status": "Tila",
+        "status": "Status",
         "size": "Size",
         "lastrun": "Last Run",
         "nextrun": "Next Run",
@@ -756,7 +763,7 @@
     },
     "audiobookshelf": {
         "podcasts": "Podcasts",
-        "books": "Kirjoja",
+        "books": "Books",
         "podcastsDuration": "Duration",
         "booksDuration": "Duration"
     },
@@ -770,14 +777,14 @@
         "updates": "Updates"
     },
     "calibreweb": {
-        "books": "Kirjoja",
+        "books": "Books",
         "authors": "Authors",
         "categories": "Categories",
         "series": "Series"
     },
     "jdownloader": {
-        "downloadCount": "Jono",
-        "downloadBytesRemaining": "Jäljellä",
+        "downloadCount": "Queue",
+        "downloadBytesRemaining": "Remaining",
         "downloadTotalBytes": "Size",
         "downloadSpeed": "Speed"
     },
@@ -787,7 +794,7 @@
     },
     "azuredevops": {
         "result": "Result",
-        "status": "Tila",
+        "status": "Status",
         "buildId": "Build ID",
         "succeeded": "Succeeded",
         "notStarted": "Not Started",
@@ -796,10 +803,10 @@
         "inProgress": "In Progress",
         "totalPrs": "Total PRs",
         "myPrs": "My PRs",
-        "approved": "Hyväksytty"
+        "approved": "Approved"
     },
     "gamedig": {
-        "status": "Tila",
+        "status": "Status",
         "online": "Online",
         "offline": "Offline",
         "name": "Name",
@@ -824,9 +831,9 @@
     },
     "openmediavault": {
         "downloading": "Downloading",
-        "total": "Yhteensä",
+        "total": "Total",
         "running": "Running",
-        "stopped": "Pysäytetty",
+        "stopped": "Stopped",
         "passed": "Passed",
         "failed": "Failed"
     },
@@ -839,7 +846,7 @@
         "bytesRx": "Received"
     },
     "uptimerobot": {
-        "status": "Tila",
+        "status": "Status",
         "uptime": "Uptime",
         "lastDown": "Last Downtime",
         "downDuration": "Downtime Duration",
@@ -869,7 +876,7 @@
         "totalfilesize": "Total Size"
     },
     "mailcow": {
-        "domains": "Verkkotunnuksia",
+        "domains": "Domains",
         "mailboxes": "Mailboxes",
         "mails": "Mails",
         "storage": "Storage"
@@ -925,9 +932,9 @@
     },
     "wgeasy": {
         "connected": "Connected",
-        "enabled": "Käytössä",
-        "disabled": "Poissa käytöstä",
-        "total": "Yhteensä"
+        "enabled": "Enabled",
+        "disabled": "Disabled",
+        "total": "Total"
     },
     "swagdashboard": {
         "proxied": "Proxied",
@@ -983,7 +990,7 @@
         "name": "Name",
         "address": "Address",
         "last_seen": "Last Seen",
-        "status": "Tila",
+        "status": "Status",
         "online": "Online",
         "offline": "Offline"
     },
@@ -993,8 +1000,8 @@
         "up": "Up",
         "down": "Down",
         "paused": "Paused",
-        "pending": "Vireillä",
-        "status": "Tila",
+        "pending": "Pending",
+        "status": "Status",
         "updated": "Updated",
         "cpu": "CPU",
         "memory": "MEM",
@@ -1021,10 +1028,10 @@
         "projects": "Projects"
     },
     "apcups": {
-        "status": "Tila",
-        "load": "Kuorma",
+        "status": "Status",
+        "load": "Load",
         "bcharge": "Battery Charge",
-        "timeleft": "Aikaa jäljellä"
+        "timeleft": "Time Left"
     },
     "karakeep": {
         "bookmarks": "Bookmarks",
@@ -1039,7 +1046,7 @@
         "connected": "Connected",
         "disconnected": "Disconnected",
         "updateStatus": "Update",
-        "update_yes": "Saatavilla",
+        "update_yes": "Available",
         "update_no": "Up to Date",
         "downloads": "Downloads",
         "uploads": "Uploads",
@@ -1054,5 +1061,58 @@
     "checkmk": {
         "serviceErrors": "Service issues",
         "hostErrors": "Host issues"
+    },
+    "komodo": {
+        "total": "Total",
+        "running": "Running",
+        "stopped": "Stopped",
+        "down": "Down",
+        "unhealthy": "Unhealthy",
+        "unknown": "Unknown",
+        "servers": "Servers",
+        "stacks": "Stacks",
+        "containers": "Containers"
+    },
+    "filebrowser": {
+        "available": "Available",
+        "used": "Used",
+        "total": "Total"
+    },
+    "wallos": {
+        "activeSubscriptions": "Subscriptions",
+        "thisMonthlyCost": "This Month",
+        "nextMonthlyCost": "Next Month",
+        "previousMonthlyCost": "Prev. Month",
+        "nextRenewingSubscription": "Next Payment"
+    },
+    "unraid": {
+        "STARTED": "Started",
+        "STOPPED": "Stopped",
+        "NEW_ARRAY": "New Array",
+        "RECON_DISK": "Reconstructing Disk",
+        "DISABLE_DISK": "Disk Disabled",
+        "SWAP_DSBL": "Swap Disable",
+        "INVALID_EXPANSION": "Invalid Expansion",
+        "PARITY_NOT_BIGGEST": "Parity Not Biggest",
+        "TOO_MANY_MISSING_DISKS": "Too Many Missing Disks",
+        "NEW_DISK_TOO_SMALL": "New Disk Too Small",
+        "NO_DATA_DISKS": "No Data Disks",
+        "notifications": "Notifications",
+        "status": "Status",
+        "cpu": "CPU",
+        "memoryUsed": "Memory Used",
+        "memoryAvailable": "Memory Available",
+        "arrayUsed": "Array Used",
+        "arrayFree": "Array Free",
+        "poolUsed": "{{pool}} Used",
+        "poolFree": "{{pool}} Free"
+    },
+    "backrest": {
+        "num_plans": "Plans",
+        "num_success_30": "Successes",
+        "num_failure_30": "Failures",
+        "num_success_latest": "Succeeding",
+        "num_failure_latest": "Failing",
+        "bytes_added_30": "Bytes Added"
     }
 }

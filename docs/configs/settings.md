@@ -264,7 +264,7 @@ fullWidth: true
 
 ### Maximum Group Columns
 
-You can set the maximum number of columns of groups on larger screen sizes (note this is only for groups with the default `style: columns`, not groups with `stle: row`) by adding:
+You can set the maximum number of columns of groups on larger screen sizes (note this is only for groups with the default `style: columns`, not groups with `style: row`) by adding:
 
 ```yaml
 maxGroupColumns: 8 # default is 4 for services, 6 for bookmarks, max 8
@@ -448,6 +448,7 @@ There are a few optional settings for the Quick Launch feature:
 - `showSearchSuggestions`: show search suggestions for the internet search. If this is not specified then the setting will be inherited from the search widget. If it is not specified there either, it will default to false. For custom providers the `suggestionUrl` needs to be set in order for this to work.
 - `provider`: search engine provider. If none is specified it will try to use the provider set for the Search Widget, if neither are present then internet search will be disabled.
 - `hideVisitURL`: disable detecting and offering an option to open URLs. This is false by default, enabling the feature.
+- `mobileButtonPosition`: enables and sets the position of the mobile quicklaunch button. Options are `top-left`, `top-right`, `bottom-left`, `bottom-right`. This is empty by default, disabling the feature.
 
 ```yaml
 quicklaunch:
