@@ -108,8 +108,8 @@
         "songs": "Liedjies"
     },
     "esphome": {
-        "offline": "Vanlyn",
-        "offline_alt": "Vanlyn",
+        "offline": "Vanlyn af",
+        "offline_alt": "Vanlyn af",
         "online": "Aanlyn",
         "total": "Totaal",
         "unknown": "Onbekend"
@@ -189,7 +189,7 @@
     "plex": {
         "streams": "Aktiewe Strome",
         "albums": "Albums",
-        "movies": "Flieks",
+        "movies": "Movies",
         "tv": "TV Programme"
     },
     "sabnzbd": {
@@ -242,15 +242,15 @@
         "wanted": "Gesoek",
         "queued": "In ry",
         "series": "Reekse",
-        "queue": "Tou",
+        "queue": "Toustaan",
         "unknown": "Onbekend"
     },
     "radarr": {
         "wanted": "Gesoek",
         "missing": "Vermis",
         "queued": "In ry",
-        "movies": "Flieks",
-        "queue": "Tou",
+        "movies": "Movies",
+        "queue": "Toustaan",
         "unknown": "Onbekend"
     },
     "lidarr": {
@@ -275,7 +275,8 @@
     "jellyseerr": {
         "pending": "Afwagtend",
         "approved": "Goedgekeur",
-        "available": "Beskikbaar"
+        "available": "Beskikbaar",
+        "issues": "Oop Kwessies"
     },
     "overseerr": {
         "pending": "Afwagtend",
@@ -302,7 +303,7 @@
         "latency": "Latensie"
     },
     "speedtest": {
-        "upload": "Laai Op",
+        "upload": "Oplaai",
         "download": "Aflaai",
         "ping": "Pieng"
     },
@@ -359,8 +360,14 @@
         "services": "Dienste",
         "middleware": "Filtreerprogramme"
     },
+    "trilium": {
+        "version": "Weergawe",
+        "notesCount": "Notas",
+        "dbSize": "Databasis Grootte",
+        "unknown": "Onbekend"
+    },
     "navidrome": {
-        "nothing_streaming": "Geen aktiewe strome nie",
+        "nothing_streaming": "Geen Aktiewe Strome",
         "please_wait": "Wag Asseblief"
     },
     "npm": {
@@ -389,7 +396,7 @@
     },
     "jackett": {
         "configured": "Opgestel",
-        "errored": "Fout"
+        "errored": "Gefout"
     },
     "strelaysrv": {
         "numActiveSessions": "Sessies",
@@ -412,7 +419,7 @@
         "version": "Weergawe",
         "status": "Status",
         "up": "Aanlyn",
-        "down": "Vanlyn"
+        "down": "Vanlyn af"
     },
     "miniflux": {
         "read": "Gelees",
@@ -549,7 +556,7 @@
         "indexers": "Indekseerders"
     },
     "tubearchivist": {
-        "downloads": "Tou",
+        "downloads": "Toustaan",
         "videos": "Videos",
         "channels": "Kanale",
         "playlists": "Snitlyste"
@@ -557,7 +564,7 @@
     "truenas": {
         "load": "Stelsellading",
         "uptime": "Optyd",
-        "alerts": "Waarskuwings"
+        "alerts": "Opletberigte"
     },
     "pyload": {
         "speed": "Spoed",
@@ -767,7 +774,7 @@
     },
     "whatsupdocker": {
         "monitoring": "Monitering",
-        "updates": "Opdatering"
+        "updates": "Opdaterings"
     },
     "calibreweb": {
         "books": "Boeke",
@@ -801,7 +808,7 @@
     "gamedig": {
         "status": "Status",
         "online": "Aanlyn",
-        "offline": "Vanlyn",
+        "offline": "Vanlyn af",
         "name": "Naam",
         "map": "Kaart",
         "currentPlayers": "Huidige Spelers",
@@ -872,7 +879,7 @@
         "domains": "Domeine",
         "mailboxes": "Posbusse",
         "mails": "E-posse",
-        "storage": "Bergplek"
+        "storage": "Stoor plek"
     },
     "netdata": {
         "warnings": "Waarskuwings",
@@ -902,7 +909,7 @@
         "galleries": "Galerye",
         "performers": "Kunstenaars",
         "studios": "Ateljees",
-        "movies": "Flieks",
+        "movies": "Movies",
         "tags": "Merkers",
         "oCount": "O Tel"
     },
@@ -920,13 +927,13 @@
         "totalValue": "Totale Waarde"
     },
     "crowdsec": {
-        "alerts": "Waarskuwings",
+        "alerts": "Opletberigte",
         "bans": "Verbanne"
     },
     "wgeasy": {
         "connected": "Gekoppel",
         "enabled": "Geaktiveer",
-        "disabled": "Onaktief",
+        "disabled": "Gediaktiveer",
         "total": "Totaal"
     },
     "swagdashboard": {
@@ -938,7 +945,7 @@
     "myspeed": {
         "ping": "Pieng",
         "download": "Aflaai",
-        "upload": "Laai Op"
+        "upload": "Oplaai"
     },
     "stocks": {
         "stocks": "Aandele",
@@ -959,7 +966,7 @@
     },
     "zabbix": {
         "unclassified": "Nie geklassifiseer nie",
-        "information": "Informasie",
+        "information": "Inligting",
         "warning": "Waarskuwing",
         "average": "Gemiddeld",
         "high": "Hoog",
@@ -982,7 +989,7 @@
     "headscale": {
         "name": "Naam",
         "address": "Adres",
-        "last_seen": "Laaste Gesien",
+        "last_seen": "Laas gesien",
         "status": "Status",
         "online": "Aanlyn",
         "offline": "Vanlyn"
@@ -1008,7 +1015,7 @@
         "healthy": "Gesond",
         "degraded": "Gedegradeer",
         "progressing": "Vorderend",
-        "missing": "Vermis",
+        "missing": "Afwesig",
         "suspended": "Geskors"
     },
     "spoolman": {
@@ -1047,12 +1054,65 @@
     },
     "jellystat": {
         "songs": "Liedjies",
-        "movies": "Flieks",
-        "episodes": "Episodes",
+        "movies": "Movies",
+        "episodes": "Episode",
         "other": "Ander"
     },
     "checkmk": {
         "serviceErrors": "Diensprobleme",
         "hostErrors": "Gasheerprobleme"
+    },
+    "komodo": {
+        "total": "Totaal",
+        "running": "Lopend",
+        "stopped": "Gestop",
+        "down": "Af",
+        "unhealthy": "Ongesond",
+        "unknown": "Onbekend",
+        "servers": "Bedieners",
+        "stacks": "Stapels",
+        "containers": "Houers"
+    },
+    "filebrowser": {
+        "available": "Beskikbaar",
+        "used": "Gebruik",
+        "total": "Totaal"
+    },
+    "wallos": {
+        "activeSubscriptions": "Intekeninge",
+        "thisMonthlyCost": "Hierdie Maand",
+        "nextMonthlyCost": "Volgende Maand",
+        "previousMonthlyCost": "Vorige Maand",
+        "nextRenewingSubscription": "Volgende paaiement"
+    },
+    "unraid": {
+        "STARTED": "Begin",
+        "STOPPED": "Gestop",
+        "NEW_ARRAY": "Nuwe Skikking",
+        "RECON_DISK": "Rekonstruksie van Skyf",
+        "DISABLE_DISK": "Skyf Gedeaktiveer",
+        "SWAP_DSBL": "Ruil Gedeaktiveer",
+        "INVALID_EXPANSION": "Ongeldige Uitbreiding",
+        "PARITY_NOT_BIGGEST": "Pariteit nie die grootste nie",
+        "TOO_MANY_MISSING_DISKS": "Te Veel Ontbrekende Skywe",
+        "NEW_DISK_TOO_SMALL": "Nuwe Skyf te Klein",
+        "NO_DATA_DISKS": "Geen Data Skywe",
+        "notifications": "Kennisgewings",
+        "status": "Status",
+        "cpu": "SVE",
+        "memoryUsed": "Geheue Gebruik",
+        "memoryAvailable": "Geheue Beskikbaar",
+        "arrayUsed": "Skikking Gebruik",
+        "arrayFree": "Skikking Vry",
+        "poolUsed": "{{pool}} Gebruik",
+        "poolFree": "{{pool}} Vry"
+    },
+    "backrest": {
+        "num_plans": "Planne",
+        "num_success_30": "Suksesse",
+        "num_failure_30": "Mislukkings",
+        "num_success_latest": "Slaag",
+        "num_failure_latest": "Mislukking",
+        "bytes_added_30": "Grepe bygevoeg"
     }
 }

@@ -417,6 +417,7 @@ function Home({ initialSettings }) {
         )}
         <meta name="msapplication-TileColor" content={themes[settings.color || "slate"][settings.theme || "dark"]} />
         <meta name="theme-color" content={themes[settings.color || "slate"][settings.theme || "dark"]} />
+        <meta name="color-scheme" content="dark light"></meta>
       </Head>
 
       <Script src="/api/config/custom.js" />
@@ -432,7 +433,7 @@ function Home({ initialSettings }) {
           searchString={searchString}
           setSearchString={setSearchString}
           isOpen={searching}
-          close={setSearching}
+          setSearching={setSearching}
         />
         <div
           id="information-widgets"
@@ -498,60 +499,88 @@ function Home({ initialSettings }) {
 }
 
 export default function Wrapper({ initialSettings, fallback }) {
-  const { themeContext } = useContext(ThemeContext);
-  const wrappedStyle = {};
+  const { theme } = useContext(ThemeContext);
+  const { color } = useContext(ColorContext);
+  let backgroundImage = "";
+  let opacity = initialSettings?.backgroundOpacity ?? 0;
   let backgroundBlur = false;
   let backgroundSaturate = false;
   let backgroundBrightness = false;
-  if (initialSettings && initialSettings.background) {
-    let opacity = initialSettings.backgroundOpacity ?? 1;
-    let backgroundImage = initialSettings.background;
-    if (typeof initialSettings.background === "object") {
-      backgroundImage = initialSettings.background.image;
-      backgroundBlur = initialSettings.background.blur !== undefined;
-      backgroundSaturate = initialSettings.background.saturate !== undefined;
-      backgroundBrightness = initialSettings.background.brightness !== undefined;
-      if (initialSettings.background.opacity !== undefined) opacity = initialSettings.background.opacity / 100;
+  if (initialSettings?.background) {
+    const bg = initialSettings.background;
+    if (typeof bg === "object") {
+      backgroundImage = bg.image || "";
+      if (bg.opacity !== undefined) {
+        opacity = 1 - bg.opacity / 100;
+      }
+      backgroundBlur = bg.blur !== undefined;
+      backgroundSaturate = bg.saturate !== undefined;
+      backgroundBrightness = bg.brightness !== undefined;
+    } else {
+      backgroundImage = bg;
     }
-    const opacityValue = 1 - opacity;
-    wrappedStyle.backgroundImage = `
-      linear-gradient(
-        rgb(var(--bg-color) / ${opacityValue}),
-        rgb(var(--bg-color) / ${opacityValue})
-      ),
-      url('${backgroundImage}')`;
-    wrappedStyle.backgroundPosition = "center";
-    wrappedStyle.backgroundSize = "cover";
   }
 
+  useEffect(() => {
+    const html = document.documentElement;
+    const body = document.body;
+
+    html.classList.remove("dark", "scheme-dark", "scheme-light");
+    html.classList.toggle("dark", theme === "dark");
+    html.classList.add(theme === "dark" ? "scheme-dark" : "scheme-light");
+
+    const desiredThemeClass = `theme-${color || initialSettings.color || "slate"}`;
+    const themeClassesToRemove = Array.from(html.classList).filter(
+      (cls) => cls.startsWith("theme-") && cls !== desiredThemeClass,
+    );
+    if (themeClassesToRemove.length) {
+      html.classList.remove(...themeClassesToRemove);
+    }
+    if (!html.classList.contains(desiredThemeClass)) {
+      html.classList.add(desiredThemeClass);
+    }
+
+    if (backgroundImage) {
+      const safeBackgroundImage = backgroundImage.replace(/'/g, "\\'");
+      body.style.backgroundImage = `linear-gradient(rgb(var(--bg-color) / ${opacity}), rgb(var(--bg-color) / ${opacity})), url('${safeBackgroundImage}')`;
+      body.style.backgroundSize = "cover";
+      body.style.backgroundPosition = "center";
+      body.style.backgroundAttachment = "fixed";
+      body.style.backgroundRepeat = "no-repeat";
+      body.style.backgroundColor = "";
+    } else {
+      body.style.backgroundImage = "none";
+      body.style.backgroundColor = "rgb(var(--bg-color))";
+      body.style.backgroundSize = "";
+      body.style.backgroundPosition = "";
+      body.style.backgroundAttachment = "";
+      body.style.backgroundRepeat = "";
+    }
+
+    return () => {
+      body.style.backgroundImage = "";
+      body.style.backgroundColor = "";
+      body.style.backgroundSize = "";
+      body.style.backgroundPosition = "";
+      body.style.backgroundAttachment = "";
+      body.style.backgroundRepeat = "";
+    };
+  }, [backgroundImage, opacity, theme, color, initialSettings.color]);
+
   return (
-    <div
-      id="page_wrapper"
-      className={classNames(
-        "relative",
-        initialSettings.theme && initialSettings.theme,
-        initialSettings.color && `theme-${initialSettings.color}`,
-        themeContext === "dark" ? "scheme-dark" : "scheme-light",
-      )}
-    >
+    <div id="page_wrapper" className="relative min-h-screen">
       <div
-        id="page_container"
-        className="fixed overflow-auto w-full h-full bg-theme-50 dark:bg-theme-800 transition-all"
-        style={wrappedStyle}
+        id="inner_wrapper"
+        tabIndex="-1"
+        className={classNames(
+          "w-full min-h-screen overflow-auto",
+          backgroundBlur &&
+            `backdrop-blur${initialSettings.background.blur?.length ? `-${initialSettings.background.blur}` : ""}`,
+          backgroundSaturate && `backdrop-saturate-${initialSettings.background.saturate}`,
+          backgroundBrightness && `backdrop-brightness-${initialSettings.background.brightness}`,
+        )}
       >
-        <div
-          id="inner_wrapper"
-          tabIndex="-1"
-          className={classNames(
-            "fixed overflow-auto w-full h-full",
-            backgroundBlur &&
-              `backdrop-blur${initialSettings.background.blur.length ? "-" : ""}${initialSettings.background.blur}`,
-            backgroundSaturate && `backdrop-saturate-${initialSettings.background.saturate}`,
-            backgroundBrightness && `backdrop-brightness-${initialSettings.background.brightness}`,
-          )}
-        >
-          <Index initialSettings={initialSettings} fallback={fallback} />
-        </div>
+        <Index initialSettings={initialSettings} fallback={fallback} />
       </div>
     </div>
   );
