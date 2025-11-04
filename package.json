@@ -11,7 +11,7 @@
     "telemetry": "next telemetry disable"
   },
   "dependencies": {
-    "@headlessui/react": "^2.2.7",
+    "@headlessui/react": "^2.2.9",
     "@kubernetes/client-node": "^1.0.0",
     "classnames": "^2.5.1",
     "compare-versions": "^6.1.1",
@@ -28,7 +28,7 @@
     "next": "^15.5.2",
     "next-i18next": "^12.1.0",
     "ping": "^0.4.4",
-    "pretty-bytes": "^6.1.1",
+    "pretty-bytes": "^7.1.0",
     "raw-body": "^3.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -47,7 +47,7 @@
     "@tailwindcss/postcss": "^4.1.14",
     "eslint": "^9.25.1",
     "eslint-config-next": "^15.2.4",
-    "eslint-config-prettier": "^10.1.1",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-prettier": "^5.5.4",
@@ -55,7 +55,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
-    "prettier-plugin-organize-imports": "^4.1.0",
+    "prettier-plugin-organize-imports": "^4.3.0",
     "tailwind-scrollbar": "^4.0.2",
     "tailwindcss": "^4.0.9",
     "typescript": "^5.7.3"
