@@ -507,9 +507,9 @@ logpath: /logfile/path
 
 By default, logs are sent both to `stdout` and to a file at the path specified. This can be changed by setting the `LOG_TARGETS` environment variable to one of `both` (default), `stdout` or `file`.
 
-## Show Docker Stats
+## Show Container Stats
 
-You can show all docker stats expanded in `settings.yaml`:
+You can show all docker or proxmox stats expanded in `settings.yaml`:
 
 ```yaml
 showStats: true
@@ -607,3 +607,18 @@ or per service widget (`services.yaml`) with:
 ```
 
 If either value is set to true, the error message will be hidden.
+
+## Disable Search Engine Indexing
+
+You can request that search engines not to index your Homepage instance by enabling the `disableIndexing` setting.
+
+```yaml
+disableIndexing: true
+```
+
+When enabled, this will:
+
+- Disallow all crawlers in `robots.txt`
+- Add `<meta name="robots" content="noindex, nofollow">` tags to prevent indexing
+
+By default this feature is disabled.

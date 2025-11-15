@@ -1,6 +1,6 @@
 {
   "name": "homepage",
-  "version": "1.5.0",
+  "version": "1.7.0",
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -62,13 +62,6 @@
   },
   "optionalDependencies": {
     "osx-temperature-sensor": "^1.0.8"
-  },
-  "packageManager": "pnpm@10.8.1",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "10.8.1"
-    }
   },
   "pnpm": {
     "onlyBuiltDependencies": [
